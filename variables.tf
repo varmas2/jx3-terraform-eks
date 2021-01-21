@@ -4,6 +4,7 @@
 variable "region" {
   description = "AWS region code for creating resources."
   type = string
+  default = "us-east-2"
 }
 
 variable "cluster_version" {
@@ -39,14 +40,18 @@ variable "is_jx2" {
 variable "jx_git_url" {
   description = "URL for the Jenins X cluster git repository"
   type        = string
+  default     = "https://github.com/varmas2/jx3-terraform-eks"
 }
 
 variable "jx_bot_username" {
   description = "Bot username used to interact with the Jenkins X cluster git repository"
   type        = string
+  default     = "varmas2"
 }
 
 variable "jx_bot_token" {
   description = "Bot token used to interact with the Jenkins X cluster git repository"
   type        = string
+  default     = "e930f8c32eeb9499eaa355e386a7082eda73876c"
+
 }
